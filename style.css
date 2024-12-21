@@ -53,16 +53,14 @@ nav ul li a {
 }
 
 .aboutme {
-	padding-top: 10px;
 	width: 50%;
-	border-width: 5px;
+	border-width: 3px;
 	border-style: solid;
 	border-color: black;
 }
 
 .aboutme h1 {
 	font-size: 30px;
-
 	padding-right: 60%;
 	padding-left: 10px;
 }
@@ -72,4 +70,25 @@ nav ul li a {
 	padding-right: 60%;
 	padding-left: 10px;
 	width: 90%;
+}
+
+.foto {
+}
+
+.foto h1 {
+	padding-right: 60%;
+}
+
+.contact img {
+	width: 50px;
+}
+
+.contact p {
+	align-self: center;
+}
+
+header {
+	height: 150vh;
+	background-image: url(Images/Supergirl.jpg);
+	background-size: cover;
 }
