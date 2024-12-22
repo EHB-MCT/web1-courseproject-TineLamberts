@@ -1,3 +1,5 @@
+/*Homepage*/
+
 body {
 	margin: 0;
 	font-family: "Courier New", Courier, monospace;
@@ -15,6 +17,16 @@ body {
 	margin: 0 auto;
 }
 
+.intro {
+	display: flex;
+	flex-direction: row;
+}
+
+.introleft {
+	display: flex;
+	flex-direction: column;
+}
+
 .header {
 	display: flex;
 	justify-content: space-between;
@@ -28,6 +40,7 @@ body {
 	);
 }
 
+/*Header*/
 .logo img {
 	width: 70px;
 }
@@ -52,17 +65,21 @@ nav ul li a {
 	color: black;
 }
 
+/*Introduction*/
 .aboutme {
 	width: 50%;
 	border-width: 3px;
 	border-style: solid;
 	border-color: black;
+	padding-left: 50px;
+	border-spacing: 100px;
 }
 
 .aboutme h1 {
 	font-size: 30px;
 	padding-right: 60%;
 	padding-left: 10px;
+	padding-top: 50px;
 }
 
 .aboutme h2 {
@@ -72,28 +89,61 @@ nav ul li a {
 	width: 90%;
 }
 
-.foto img {
-	align-items: center;
-}
-
-.foto h1 {
-	padding-right: 60%;
-}
-
+/*My contact details*/
 .contact img {
+	display: flex;
+	flex-direction: column;
 	width: 50px;
+	padding-left: 50px;
+}
+
+.name {
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 20px;
+}
+
+.study {
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 20px;
+}
+
+.work {
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 20px;
+}
+
+.email {
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 20px;
+}
+
+.contact h1 {
+	padding-left: 50px;
+	padding-top: 100px;
+	width: 100%;
 }
 
 .contact p {
 	align-self: center;
+	padding-left: 50px;
 }
 
-header {
-	height: 150vh;
-	background-image: url(Images/Supergirl.jpg);
-	background-size: cover;
+/*Cara Danvers*/
+.foto h1 {
+	padding-top: 50px;
 }
 
+.foto img {
+	display: flex;
+	flex-direction: column;
+	margin-right: 50%;
+}
+
+/*My skills*/
 .myskills {
 	display: flex;
 	flex-direction: column;
