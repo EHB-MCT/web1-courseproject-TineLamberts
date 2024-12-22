@@ -17,6 +17,12 @@ body {
 	flex-direction: row;
 }
 
+@media screen and (max-width: 768px) {
+	.intro {
+		flex-direction: column;
+	}
+}
+
 .introleft {
 	display: flex;
 	flex-direction: column;
@@ -35,6 +41,12 @@ body {
 	);
 }
 
+@media screen and (min-width: 768px) {
+	.mobile-container {
+		display: none;
+	}
+}
+
 /*Header*/
 .logo img {
 	width: 70px;
@@ -42,6 +54,11 @@ body {
 
 nav {
 	align-items: center;
+}
+
+nav ul li:hover {
+	background-color: white;
+	font-weight: bold;
 }
 
 nav ul {
@@ -60,6 +77,54 @@ nav ul li a {
 	color: black;
 }
 
+@media screen and (max-width: 768px) {
+	.header {
+		display: none;
+	}
+	.mobile-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		background: rgb(47, 73, 214);
+		background: radial-gradient(
+			circle,
+			rgba(47, 73, 214, 1) 23%,
+			rgba(179, 72, 72, 1) 100%
+		);
+	}
+
+	.topnav {
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+	}
+
+	.topnav #myLinks {
+		display: none;
+	}
+
+	.topnav a {
+		color: white;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+		display: block;
+	}
+
+	.topnav a.icon {
+		background: black;
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.topnav a:hover {
+		background-color: #ddd;
+		color: black;
+	}
+}
 /*Introduction*/
 
 .aboutme h1 {
@@ -90,10 +155,22 @@ nav ul li a {
 	padding-bottom: 20px;
 }
 
+@media screen and (max-width: 768px) {
+	.name {
+		flex-direction: column;
+	}
+}
+
 .study {
 	display: flex;
 	flex-direction: row;
 	padding-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+	.study {
+		flex-direction: column;
+	}
 }
 
 .work {
@@ -102,10 +179,22 @@ nav ul li a {
 	padding-bottom: 20px;
 }
 
+@media screen and (max-width: 768px) {
+	.work {
+		flex-direction: column;
+	}
+}
+
 .email {
 	display: flex;
 	flex-direction: row;
 	padding-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+	.email {
+		flex-direction: column;
+	}
 }
 
 .contact h1 {
@@ -121,6 +210,7 @@ nav ul li a {
 
 /*Cara Danvers*/
 .foto h1 {
+	padding-left: 50px;
 	padding-top: 50px;
 }
 
@@ -152,9 +242,21 @@ nav ul li a {
 	flex-direction: row;
 }
 
+@media screen and (max-width: 768px) {
+	.writing {
+		flex-direction: column;
+	}
+}
+
 .research {
 	display: flex;
 	flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+	.research {
+		flex-direction: column;
+	}
 }
 
 .teamwork {
@@ -162,9 +264,21 @@ nav ul li a {
 	flex-direction: row;
 }
 
+@media screen and (max-width: 768px) {
+	.teamwork {
+		flex-direction: column;
+	}
+}
+
 .speaking {
 	display: flex;
 	flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+	.speaking {
+		flex-direction: column;
+	}
 }
 
 .tekstright {
@@ -294,6 +408,12 @@ header {
 	padding: 20px;
 }
 
+@media screen and (max-width: 768px) {
+	.supergirl {
+		flex-direction: column;
+	}
+}
+
 .supergirl img {
 	margin-right: 20px;
 	width: 100%;
@@ -302,4 +422,10 @@ header {
 .pro {
 	display: flex;
 	flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+	.pro {
+		flex-direction: column;
+	}
 }

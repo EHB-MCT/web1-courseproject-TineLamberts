@@ -5,69 +5,95 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Kara Danvers - My skills</title>
 		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
 	</head>
 	<body>
-		<div class="wrapper">
-			<div class="header">
+		<div class="header">
+			<img src="Images/Logo 2.png" alt="" />
+			<nav>
+				<ul>
+					<li><a href="index.html">Homepage</a></li>
+					<li><a href="supergirl.html">Supergirl</a></li>
+					<li><a href="my-skills.html">My skills</a></li>
+				</ul>
+			</nav>
+		</div>
+		<!-- Simulate a smartphone / tablet -->
+		<div class="mobile-container">
+			<!-- Top Navigation Menu -->
+			<div class="topnav">
 				<img src="Images/Logo 2.png" alt="" />
-				<nav>
-					<ul>
-						<li><a href="index.html">Homepage</a></li>
-						<li><a href="supergirl.html">Supergirl</a></li>
-						<li><a href="my-skills.html">My skills</a></li>
-					</ul>
-				</nav>
+				<div id="myLinks">
+					<a href="index.html">Homepage</a>
+					<a href="supergirl.html">Supergirl</a>
+					<a href="my-skills.html">My skills</a>
+				</div>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
 			</div>
-			<div class="myskills">
-				<div class="writing">
-					<div class="tekstright">
-						<h1>Exceptional Writing and Communication:</h1>
-						<p>
-							I pride myself on my ability to craft compelling, impactful
-							stories that connect with readers on a deep level. Whether it’s a
-							feature piece or breaking news, I aim to inform and inspire
-							through clear, engaging writing.
-						</p>
-					</div>
-					<img src="Images/Writing on paper.jpg" alt="" />
+		</div>
+		<div class="myskills">
+			<div class="writing">
+				<div class="tekstright">
+					<h1>Exceptional Writing and Communication:</h1>
+					<p>
+						I pride myself on my ability to craft compelling, impactful stories
+						that connect with readers on a deep level. Whether it’s a feature
+						piece or breaking news, I aim to inform and inspire through clear,
+						engaging writing.
+					</p>
 				</div>
-				<div class="research">
-					<img src="Images/Research.jpg" alt="" />
-					<div class="tekstleft">
-						<h1>Investigative Research:</h1>
-						<p>
-							I have a passion for digging deep into topics, uncovering hidden
-							truths, and ensuring that every story I write is well-researched
-							and factual. Persistence and attention to detail are at the core
-							of my investigative approach.
-						</p>
-					</div>
+				<img src="Images/Writing on paper.jpg" alt="" />
+			</div>
+			<div class="research">
+				<img src="Images/Research.jpg" alt="" />
+				<div class="tekstleft">
+					<h1>Investigative Research:</h1>
+					<p>
+						I have a passion for digging deep into topics, uncovering hidden
+						truths, and ensuring that every story I write is well-researched and
+						factual. Persistence and attention to detail are at the core of my
+						investigative approach.
+					</p>
 				</div>
-				<div class="teamwork">
-					<div class="tekstright">
-						<h1>Team Collaboration:</h1>
-						<p>
-							Working with others is a vital part of what I do, and I value the
-							opportunity to collaborate with colleagues and editors. I’m always
-							open to feedback and enjoy contributing to a positive and
-							productive work environment.
-						</p>
-					</div>
-					<img src="Images/Teamwork.jpg" alt="" />
+			</div>
+			<div class="teamwork">
+				<div class="tekstright">
+					<h1>Team Collaboration:</h1>
+					<p>
+						Working with others is a vital part of what I do, and I value the
+						opportunity to collaborate with colleagues and editors. I’m always
+						open to feedback and enjoy contributing to a positive and productive
+						work environment.
+					</p>
 				</div>
-				<div class="speaking">
-					<img src="Images/Speaking.jpg" alt="" />
-					<div class="tekstleft">
-						<h1>Public Speaking:</h1>
-						<p>
-							I’m comfortable presenting ideas, conducting interviews, or
-							speaking in public forums. Clear and confident communication is
-							something I’ve honed over time, and I enjoy sharing insights with
-							others.
-						</p>
-					</div>
+				<img src="Images/Teamwork.jpg" alt="" />
+			</div>
+			<div class="speaking">
+				<img src="Images/Speaking.jpg" alt="" />
+				<div class="tekstleft">
+					<h1>Public Speaking:</h1>
+					<p>
+						I’m comfortable presenting ideas, conducting interviews, or speaking
+						in public forums. Clear and confident communication is something
+						I’ve honed over time, and I enjoy sharing insights with others.
+					</p>
 				</div>
 			</div>
 		</div>
+		<script>
+			function myFunction() {
+				var x = document.getElementById("myLinks");
+				if (x.style.display === "block") {
+					x.style.display = "none";
+				} else {
+					x.style.display = "block";
+				}
+			}
+		</script>
 	</body>
 </html>
