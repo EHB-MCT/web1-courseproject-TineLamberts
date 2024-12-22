@@ -72,7 +72,8 @@ nav ul li a {
 	width: 90%;
 }
 
-.foto {
+.foto img {
+	align-items: center;
 }
 
 .foto h1 {
@@ -91,4 +92,58 @@ header {
 	height: 150vh;
 	background-image: url(Images/Supergirl.jpg);
 	background-size: cover;
+}
+
+.myskills {
+	display: flex;
+	flex-direction: column;
+	margin: 20px 0;
+}
+
+.myskills img {
+	max-width: 100%;
+	max-height: 500px;
+	border-radius: 10px;
+	object-fit: contain;
+	margin-bottom: 50px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.writing {
+	display: flex;
+	flex-direction: row;
+}
+
+.research {
+	display: flex;
+	flex-direction: row;
+}
+
+.teamwork {
+	display: flex;
+	flex-direction: row;
+}
+
+.speaking {
+	display: flex;
+	flex-direction: row;
+}
+
+.tekstright {
+	font-size: 20px;
+	padding-right: 5%;
+	width: 100%;
+	align-self: center;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.tekstleft {
+	font-size: 20px;
+	padding-right: 5%;
+	width: 100%;
+	align-self: center;
+	margin-left: 50px;
+	margin-right: 50px;
 }
